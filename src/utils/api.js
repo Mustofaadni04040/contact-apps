@@ -72,17 +72,17 @@ async function addContact({ name, tag }) {
       },
       body: JSON.stringify({ name, tag }),
     });
-   
+  
     const responseJson = await response.json();
-   
+  
     if (responseJson.status !== 'success') {
       alert(responseJson.message);
       return { error: true };
     }
-   
+  
     return { error: false };
 }
-
+  
 async function getContacts() {
     const response = await fetchWithToken(`${BASE_URL}/contacts`);
     const responseJson = await response.json();

@@ -17,6 +17,6 @@ ContactItem.propTypes = {
   imageUrl: PropTypes.string,
   name: PropTypes.string,
   tag: PropTypes.string,
-  id: PropTypes.number,
+  id: PropTypes.string,
   onDelete: PropTypes.func,
 };
